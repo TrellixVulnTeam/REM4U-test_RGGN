@@ -1,0 +1,5 @@
+id;Date;Aéroport_départ;depart_x;depart_y;Aéroport_Destination;destination_x;destination_y;départ_IATA;destination_IATA;Heurelocale;HeureArrivé;Durée_trajet;Compagnie;Num_Vol;Prix_Camp1
+;2022-04-09;Aéroport international de Monastir Habib-Bourguiba;33.871179999999995;10.775145;Frankfurt International Airport;36.8511111;3.5169444;MIR;FRA;13:50;16:40;01:50;Nouvelair;;147
+;2022-04-09;Frankfurt International Airport;36.8511111;3.5169444;Doha International;49.0142434999854;2.544806865954252;FRA;DOH;17:35;00:25;05:50;Emirates;;648
+;;;;;;;;;;;;;;;197
+;;;;;;;;;;;;;;;508

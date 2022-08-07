@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+
+			
+		
+		
+		<div id="fh5co-tours" class="fh5co-section-gray">
+			<div class="container">
+			  <div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+				  <h3>Choose a Flight From {{ Adresse_depart }} To {{ Adresse_arrivée }}</h3>
+				  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+					blind texts.</p>
+				</div>
+			  </div>
+
+		
+		
+			  <!----------------------------------------------------------thissss-->
+			  <div class="row row-bottom-padded-md">
+				
+				<h1 style=" color: #f78536; ">Direct Flights</h1>
+				{% for flight in pa %}
+			
+				<div class="col-md-8 animate-box">
+
+			
+				  <ul class="list-tickets" style="list-style-type:none;">
+                    <li class="list-item"> 
+
+					  <div class="list-item-inner">
+
+						<div class="list-item-main">
+
+						  <div class="list-item-top">
+						
+
+							<div class="list-item-logo">
+								
+							</div>
+						  </div><span class="small d-block">{{ flight.6 }}</span>
+							<div class="list-item-content">
+							  <div class="list-item-content-left">
+								<div class="text-bold text-base">{{ flight.0 }}</div><span class="small d-block">{{flight.1 }}</span>
+							  </div>
+							  <div class="list-item-content-line-wrapper small">
+								
+								<div class="list-item-content-line-top">{{ flight.5 }}</div><div class="text-bold text-base">(+1)</div>
+								<div class="list-item-content-line"></div>
+								<div class="list-item-content-line-bottom text-info-dr"></div>
+							  </div>
+							  <div class="list-item-content-right">
+								<div class="text-bold text-base">{{ flight.3 }}</div><span class="small d-block">{{ flight.2 }}</span>
+							  </div>
+							</div>
+						</div>
+						<div class="list-item-footer"><span class="small">Price</span>
+							<h5 class="text-bold list-item-price">{{ flight.4 }}£</h5><a
+							  class="button button-primary button-xs button-no-shadow" href="#">select</a>
+						</div>
+						<hr class="divider divider-wide">
+
+			
+						</div>
+					  </div>
+					</li>
+                {% endfor %}
+
+				  </ul>
+			  </div>
+
+
+
+
+			
+
+
+		</div>
+		
+			<!-------------------------------------------------------------------------------------------------------->
+{% endblock %}
+				
+
+
+
+
+
+
+
+
+

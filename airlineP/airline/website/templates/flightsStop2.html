@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+
+			
+		
+		
+		<div id="fh5co-tours" class="fh5co-section-gray">
+			<div class="container">
+			  <div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+				  <h3>Choose a Flight From {{ Adresse_depart }} To {{ Adresse_arrivée }}</h3>
+				  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+					blind texts.</p>
+				</div>
+			  </div>
+
+		
+		
+			  <!----------------------------------------------------------thissss-->
+			  <div class="row row-bottom-padded-md">
+				
+				<h1 style=" color: #f78536; ">Flights with 2 stops</h1>
+				{% for flight in pa %}
+
+				<div class="col-md-8 animate-box">
+
+			
+				  <ul class="list-tickets" style="list-style-type:none;">
+                    <li class="list-item"> 
+
+					  <div class="list-item-inner">
+
+						<div class="list-item-main">
+
+						  <div class="list-item-top">
+							<div class="list-item-logo"><img src="../static/website/images/{{flight.11}}.png" alt="" width="100" height="80"></div>
+							<div class="list-item-logo"><img src="../static/website/images/{{flight.12}}.png" alt="" width="100" height="80"></div>
+							<div class="list-item-logo"><img src="../static/website/images/{{flight.13}}.png" alt="" width="100" height="80"></div>
+						  </div><span class="small d-block">{{ flight.11 }}+{{ flight.12 }}+{{ flight.13 }}</span>
+							<div class="list-item-content">
+							  <div class="list-item-content-left">
+								<div class="text-bold text-base">{{ flight.4 }}</div><span class="small d-block">{{flight.5 }}</span>
+							  </div>
+							  <div class="list-item-content-line-wrapper small">
+								<div class="list-item-content-line-top">{{ flight.10 }}  <div class="text-bold text-base">(+ {{flight.14}} j)</div></div>
+								<div class="list-item-content-line"></div>
+								<div class="list-item-content-line-bottom text-info-dr">{{ flight.8}} , {{ flight.9 }}  </div>
+							  </div>
+							  <div class="list-item-content-right">
+								<div class="text-bold text-base">{{ flight.7 }}</div><span class="small d-block">{{ flight.6 }}</span>
+							  </div>
+							</div>
+						</div>
+						<div class="list-item-footer"><span class="small">Price</span>
+							<h5 class="text-bold list-item-price">{{ flight.0 }}£</h5><a
+							  class="button button-primary button-xs button-no-shadow" href="#">select</a>
+						</div>
+						<hr class="divider divider-wide">
+
+			
+						</div>
+					  </div>
+					</li>
+                {% endfor %}
+
+				  </ul>
+			  </div>
+
+
+
+
+			
+
+
+		</div>
+		
+			<!-------------------------------------------------------------------------------------------------------->
+{% endblock %}
+				
+

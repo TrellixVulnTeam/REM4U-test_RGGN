@@ -1,0 +1,22 @@
+id;Date;Aéroport_départ;depart_x;depart_y;Aéroport_Destination;destination_x;destination_y;départ_IATA;destination_IATA;Heurelocale;HeureArrivé;Durée_trajet;Compagnie;Num_Vol;Prix_Camp1
+1;2022-04-04;Aéroport international de Monastir Habib-Bourguiba;35.76108;10.753155;Charles De Gaulle;36.8511111;3.5169444;MIR;CDG;15:00;18:45;02:45;Nouvelair;;49
+1;2022-04-07;Aéroport international de Monastir Habib-Bourguiba;35.76108;10.753155;Charles De Gaulle;36.8511111;3.5169444;MIR;CDG;15:45;19:30;02:45;Nouvelair;;35
+1;2022-04-08;Aéroport international de Monastir Habib-Bourguiba;35.76108;10.753155;Charles De Gaulle;36.8511111;3.5169444;MIR;CDG;07:00;10:45;02:45;Nouvelair;;35
+1;2022-04-08;Aéroport international de Monastir Habib-Bourguiba;35.76108;10.753155;Charles De Gaulle;36.8511111;3.5169444;MIR;CDG;15:00;18:45;02:45;Nouvelair;;35
+1;2022-04-09;Aéroport international de Monastir Habib-Bourguiba;35.76108;10.753155;Charles De Gaulle;36.8511111;3.5169444;MIR;CDG;05:00;08:45;02:45;Nouvelair;;35
+1;2022-04-09;Aéroport international de Monastir Habib-Bourguiba;35.76108;10.753155;Charles De Gaulle;36.8511111;3.5169444;MIR;CDG;12:30;16:15;02:45;Nouvelair;;63
+1;2022-04-10;Aéroport international de Monastir Habib-Bourguiba;35.76108;10.753155;Charles De Gaulle;36.8511111;3.5169444;MIR;CDG;07:30;11:15;02:45;Nouvelair;;63
+;2022-04-08;Charles De Gaulle;36.8511111;3.5169444;Schiphol;52.30907;4.7633849999999995;CDG;AMS;14:30;15:45;01:15;Air France;;115.36
+;2022-04-04;Carthage;36.847621999999994;10.217089999999999;Charles De Gaulle;36.8511111;3.5169444;TUN;CDG;07:00;10:30;02:30;Nouvelair;;61
+;2022-04-04;Charles De Gaulle;36.8511111;3.5169444;Berlin Brandenburg Airport;52.3667;13.502;CDG;BER;20:55;22:40;01:45;Air France;;166.86
+;2022-04-04;Charles De Gaulle;36.8511111;3.5169444;Addis Ababa Bole International Airport;36.8511111;3.5169444;CDG;ADD;22:15;06:20;07:05;Ethiopian Airlines;;561.96
+;2022-04-05;Addis Ababa Bole International Airport;36.8511111;3.5169444;N'Djamena Hassan Djamous;15.033953267933791;12.129607056348444;ADD;NDJ;08:30;19:10;12:40;ASKY;;838.51
+;2022-04-09;Djerba-Zarzis;33.871179999999995;10.775145;Dusseldorf International Airport;51.278328;6.76558;DJE;DUS;08:15;11:25;02:10;Nouvelair;;115
+;2022-04-09;Djerba-Zarzis;33.871179999999995;10.775145;Frankfurt International Airport;50.050734999999996;8.570772999999999;DJE;FRA;08:00;12:05;03:05;Nouvelair;;125
+;2022-04-08;Djerba-Zarzis;33.871179999999995;10.775145;Bruxelles Airport; 48.3489990234;6.68209981918;DJE;BRU;15:00;19:00;03:00;Nouvelair;;113
+;2022-04-10;Djerba-Zarzis;33.871179999999995;10.775145; Bruxelles Airport;36.8511111;3.5169444;DJE;BRU;07:00;11:00;03:00;Nouvelair;;197
+;2022-04-10;Bruxelles Airport;36.8511111;3.5169444;Dubai;49.0142434999854;2.544806865954252;BRU;DXB;15:20;23:55;06:35;Emirates;;508
+;2022-04-05;Djerba-Zarzis;33.871179999999995;10.775145;Lesquin;50.57205;3.106067;DJE;LIL;06:15;10:20;03:05;Nouvelair;;78
+;2022-04-09;Djerba-Zarzis;33.871179999999995;10.775145;Lesquin;50.57205;3.106067;DJE;LIL;18:35;22:40;03:05;Nouvelair;;172
+1;2022-04-09;Aéroport international de Monastir Habib-Bourguiba;35.76108;10.753155;Frankfurt International Airport;36.8511111;3.5169444;MIR;FRA;13:50;10:45;01:50;Nouvelair;;147
+;2022-04-09;Frankfurt International Airport;36.8511111;3.5169444;Schiphol;52.30907;4.7633849999999995;FRA;DOH;17:35;00:25;05:50;Qatar Airways;;648

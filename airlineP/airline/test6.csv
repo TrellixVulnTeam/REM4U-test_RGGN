@@ -1,0 +1,8 @@
+id;Date;Aéroport_départ;depart_x;depart_y;Aéroport_Destination;destination_x;destination_y;départ_IATA;destination_IATA;Heurelocale;HeureArrivé;Durée_trajet;Compagnie;Num_Vol;Prix_Camp1
+293;2021-04-23;Aéroport international de Tunis-Carthage;36.8511111;10.2272222;Aéroport d'Alger - Houari-Boumédiène;36.8511111;3.5169444;TUN;ALG;13:15;14:50;01:35;Nouvelair;TU374;149
+313;2021-04-23;Aéroport d'Alger - Houari-Boumédiène;36.8511111;3.5169444;Aéroport de Paris-Charles de Gaulle;49.0142434999854;2.544806865954252;ALG;CDG;17:30;19:50;02:20;Air France;AF1385;130
+293;2022-01-22;Carthage;36.8511111;10.2272222;Charles De Gaulle;36.8511111;3.5169444;TUN;CDG;15:30;18:00;02:30;Nouvelair;78;152
+313;2022-01-22;Charles De Gaulle;36.8511111;3.5169444;Dubai;49.0142434999854;2.544806865954252;CDG;DXB;23:35;09:20;09:45;Air France;107;460
+6;2022-01-22;Monastir;35.76108;10.753155;Dusseldorf;36.8511111;3.5169444;MIR;DUS;08:15;11:10;02:55;Nouvelair;214;165
+7;2022-01-22;Dusseldorf;36.8511111;3.5169444;Dubai;49.0142434999854;2.544806865954252;DUS;DXB;14:30;00:05;09:35;Emirates;523;
+7;2022-01-22;Dusseldorf;36.8511111;3.5169444;Dubai;49.0142434999854;2.544806865954252;DUS;DXB;20:45;06:15;09:30;Emirates;546;

@@ -1,0 +1,323 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<div class="fh5co-overlay"></div>
+				<div class="fh5co-cover" data-stellar-background-ratio="0.5"
+				  style="background-image: url( '/static/website/images/2.jpg'); ">
+				
+				  <div class="desc">
+					<div class="container">
+					  <div class="row">
+						<div class="col-sm-5 col-md-5">
+						  <div class="tabulation animate-box">
+							<ul class="nav nav-tabs" role="tablist">
+							  <li role="presentation" class="active"><a href="#home" aria-controls="flights" role="tab"
+								  data-toggle="tab">Flights</a></li>
+							</ul>
+							  <div class="tab-content">
+								<div role="tabpanel" class="tab-pane active" id="flights">
+								  <div class="row">
+									
+								   <form action="{% url 'pa'  %}" method="post">
+										  {% csrf_token %}
+
+
+									<div class="col-xxs-12 col-xs-6 mt">
+									  <div class="input-field">
+										<label>From:</label>
+								<!--	<input type="text" name="Adresse_depart" class="form-control" placeholder="CDG">
+
+								-->
+									<select class="cs-select cs-skin-border" name="Adresse_depart" >
+										  <option disabled="" value="Adresse_depart" selected=""></option>
+										  <option value="TUN">TUN</option>
+										  <option value="MIR">MIR</option>
+										  <option value="DJE">DJE</option>
+
+										  <option value="ALG">ALG</option>
+										  <option value="CDG">CDG</option>
+
+
+										  <option value="svo">SVO</option>
+										  <option value="LHR">LHR</option>
+										  <option value="AMS">AMS</option>
+									
+										  <option value="BER">BER</option>
+										  <option value="FRA">FRA</option>
+										  <option value="HAJ">HAJ</option>
+										  <option value="DUS">DUS</option> 
+
+										  <option value="BRU">BRU</option> 
+										  <option value="POZ">POZ</option> 
+										  <option value="WAW">WAW</option> 
+										  <option value="KTW">KTW</option> 
+										  <option value="LJU">LJU</option> 
+										  <option value="BUD">BUD</option> 
+										  <option value="BEG">BEG</option>
+
+										  <option value="SJJ">SJJ</option> 
+										  <option value="NLA">NLA</option> 
+										  <option value="NDJ">NDJ</option> 
+										  <option value="AYT">AYT</option> 
+										  <option value="IST">IST</option> 
+										  <option value="EVN">EVN</option> 
+										</select>
+
+
+												
+
+
+									  </div>
+									</div>
+									<div class="col-xxs-12 col-xs-6 mt">
+									  <div class="input-field">
+										<label>To:</label>
+										
+
+											<input type="text" name="Adresse_arrivée" class="form-control" placeholder="">
+									
+										<!--<select class="cs-select cs-skin-border" name="Adresse_depart" >
+											<option disabled="" value="Adresse_depart" selected=""></option>
+											<option value="TUN">TUN</option>
+											<option value="MIR">MIR</option>
+											<option value="DJE">DJE</option>
+  
+											<option value="ALG">ALG</option>
+											<option value="CDG">CDG</option>
+  
+  
+											<option value="SVO">SVO</option>
+											<option value="LHR">LHR</option>
+											<option value="AMS">AMS</option>
+									  
+  
+											<option value="LIL">LIL</option>
+											<option value="SXB">SXB</option>
+											<option value="NTE">NTE</option>
+											<option value="LYS">LYS</option>
+											<option value="NCE">NCE</option> 
+  
+											<option value="MRS">MRS</option> 
+											<option value="TLS">TLS</option>
+  
+											<option value="GVA">GVA</option>
+											<option value="BER">BER</option>
+											<option value="FRA">FRA</option>
+											<option value="HAJ">HAJ</option>
+											<option value="DUS">DUS</option> 
+  
+											<option value="BRU">BRU</option> 
+											<option value="POZ">POZ</option> 
+											<option value="WAW">WAW</option> 
+											<option value="KTW">KTW</option> 
+											<option value="LJU">LJU</option> 
+											<option value="BUD">BUD</option> 
+											<option value="BEG">BEG</option>
+  
+											<option value="SJJ">SJJ</option> 
+											<option value="NLA">NLA</option> 
+											<option value="NDJ">NDJ</option> 
+											<option value="AYT">AYT</option> 
+											<option value="IST">IST</option> 
+											<option value="EVN">EVN</option> 
+										  </select>	-->
+
+									  </div>
+									</div>
+									<div class="col-xxs-12 col-xs-6 mt alternate">
+									  <div class="input-field">
+										<label type="Date">Depart Date:</label>
+										<input type="date" class="form-control" name="Date" value="2021-11-01"
+										  min="2018-01-01" max="2023-06-22">
+									  </div>
+									</div>
+									<div class="col-xxs-12 col-xs-6 mt alternate">
+									  <div class="input-field">
+										<label>Hour:</label>
+										<input type="time" id="appt" name="Heure" value="07:00" min="00:01" max="23:59"
+										  class="form-control">
+									  </div>
+									</div>
+		
+									<div class="col-sm-12 mt"  >
+									 
+										<label for="class">Airline:</label>
+										<select class="cs-select cs-skin-border" name="Compagnie" >
+										  <option disabled="" value="Compagnie" selected=""></option>
+										  
+										  <option value="Tunisair Express">Tunisair Express</option>
+										  <option value="Nordwind Airlines">Nordwind Airlines</option>
+										  <option value="Royal Flight">Royal Flight</option>
+										  <option value="Transavia">Transavia</option>
+										  <option value="eurowings">eurowings</option>
+										  <option value="LOT">LOT</option>
+										  <option value="Nouvelair">Nouvelair</option>
+										  <option value="AirFrance">Air France</option>
+										  <option value="Turkish Airlines">Turkish Airlines</option>
+										  <option value="British Airways">British Airways</option>
+										  <option value="Tunisair">Tunisair</option>
+										  <option value="Brussels Airlines">Brussels Airlines</option>
+										  <option value="easyJet">easyJet</option>
+										  <option value="SWISS">SWISS</option>
+										  <option value="ASL Airlines France">ASL Airlines France</option>
+										  <option value="Air Serbia">Air Serbia</option>
+										  <option value="Aeroflot">Aeroflot</option>
+										  <option value="Hewa Bora Airways">Hewa Bora Airways</option>
+										  <option value="Lufthansa">Lufthansa</option>
+										  <option value="SunExpress">SunExpress</option>
+										  <option value="KLM">KLM</option>
+										  <option value="Egyptair">Egyptair</option>
+										  <option value="AirBridgeCargo Airlines">AirBridgeCargo Airlines</option>
+										  <option value="Iberia">Iberia</option>
+										  <option value="China Southern Airlines">China Southern Airlines</option>
+										  <option value="Delta Air Lines">Delta Air Lines</option>
+										  <option value="Air Europa">Air Europa</option>
+										  <option value="United Airlines">United Airlines</option>
+										  <option value="Tap Air Portugal">Tap Air Portugal</option>
+										  <option value="Austrian Airlines">Austrian Airlines</option>
+										  <option value="Aer Lingus">Aer Lingus</option>
+										  <option value="Alitalia">Alitalia</option>
+										  <option value="Ryanair">Ryanair</option>
+										</select>
+									</div>
+		                            
+									<div class="col-sm-12 mt">
+										<label for="class">Choose the number of Stops :</label>
+									   <section>
+									  
+									  <input type="checkbox" id="Direct" name="Direct" >
+									  <label>Direct flights </label>
+									  <input type="checkbox" id="stop1" name="stop1">
+									  <label>1 Stop </label>
+									  <input type="checkbox" id="stop2" name="stop2">
+									  <label>2 Stops </label>
+									  </section>
+									</div>
+									<div class="col-sm-12 mt">
+										<label for="class">Pick your filter :</label>
+
+										<section>
+											
+									   <input type="radio" id="price" name="price" value="price">
+									   <label>With Price </label>
+
+									   <input type="radio" id="duration" name="duration" value="duration">
+									   
+									   <label>With Duration </label>
+
+									   
+									   </section>
+									 </div>
+									<div class="col-xs-12">
+									 <input type="submit" class="btn btn-primary btn-block" value="Search Trip">
+									</div>
+								   </form>
+								  </div>
+								</div>
+							  </div>
+						  </div>
+						 </div>
+						<div class="desc2 animate-box">
+							<div class="col-sm-5 col-sm-push-1 col-md-7 col-md-push-1">
+								<h2>Explore and Travel</h2>
+								<h3>Your Journy Starts Here </h3>
+		
+								<span class="price"> Your Best Trip </span>
+							</div>
+						</div>
+		
+					   
+					  </div>
+		
+					</div>
+				  </div>
+				</div>
+			
+		
+		
+		<div id="fh5co-tours" class="fh5co-section-gray">
+			<div class="container">
+			  <div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+				  <h3>Book A Flight From {{Adresse_depart}} To {{Adresse_arrivée}}</h3>
+				  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+					blind texts.</p>
+				</div>
+			  </div>
+			  
+		
+		
+		
+		
+			  <!----------------------------------------------------------thissss-->
+		
+			</div>
+		
+			<!-------------------------------------------------------------------------------------------------------->
+		
+		
+		
+				</div>
+			  
+				<div class="row row-bottom-padded-md">
+				
+					<h1 style=" color: #f78536; "></h1>
+					{% for flight in pa %}
+				
+					<div class="col-md-8 animate-box">
+	
+				
+					  <ul class="list-tickets" style="list-style-type:none;">
+						<li class="list-item"> 
+	
+						  <div class="list-item-inner">
+	
+							<div class="list-item-main">
+	
+							  <div class="list-item-top">
+								<div class="list-item-logo"><img src="{% static  'website/images/logo-01.jpg'%}" alt=""></div>
+							  </div><span class="small d-block">{{ flight.6 }}</span>
+								<div class="list-item-content">
+								  <div class="list-item-content-left">
+									<div class="text-bold text-base">{{ flight.0 }}</div><span class="small d-block">{{flight.1 }}</span>
+								  </div>
+								  <div class="list-item-content-line-wrapper small">
+									<div class="list-item-content-line-top">{{ flight.5 }}</div>
+									<div class="list-item-content-line"></div>
+									<div class="list-item-content-line-bottom text-info-dr"></div>
+								  </div>
+								  <div class="list-item-content-right">
+									<div class="text-bold text-base">{{ flight.3 }}</div><span class="small d-block">{{ flight.2 }}</span>
+								  </div>
+								</div>
+							</div>
+							<div class="list-item-footer"><span class="small">Price</span>
+								<h5 class="text-bold list-item-price">{{ flight.4 }}£</h5><a
+								  class="button button-primary button-xs button-no-shadow" href="#">select</a>
+							</div>
+							<hr class="divider divider-wide">
+	
+				
+							</div>
+						  </div>
+						</li>
+					{% endfor %}
+	
+					  </ul>
+				  </div>
+
+				{% endblock%}
+				
+
+
+
+
+
+
+
+
+
