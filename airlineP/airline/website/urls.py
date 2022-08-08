@@ -11,6 +11,13 @@ urlpatterns = [
     path('flightsDirect/', views.exemple, name="pa"),
     path('flightsStop1/', views.exemple, name="pa"),
     path('flightsStop2/', views.exemple, name="pa"),
+    path('admin/', admin.site.urls),
+    path('', include("Home.urls")),
+
+    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
+
+
 
 
 ]
